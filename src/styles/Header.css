@@ -1,0 +1,55 @@
+header {
+  background-color: var(--black);
+  height: 70px;
+  padding: 0 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+  height: 100%;
+}
+
+nav li {
+  list-style: none;
+  font-weight: 300;
+  cursor: pointer;
+  box-shadow: none;
+  transition: all 0.2s ease-in-out;
+}
+
+nav li:hover {
+  color: var(--blue);
+}
+
+nav li.active {
+  color: var(--blue);
+  box-shadow: 0 2px 0 var(--blue);
+}
+
+/* @media for mac air  */
+@media screen and (max-width: 1440px) {
+  header {
+    padding: 0 30px;
+  }
+}
+
+/* @media for 1920x1080  */
+@media screen and (max-width: 1920px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+/* @media for 2560x1440  */
+@media screen and (max-width: 2560px) {
+  header {
+    padding: 0 50px;
+  }
+}
