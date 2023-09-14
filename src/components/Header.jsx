@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import '../styles/Header.css';
+import { motion } from 'framer-motion';
 
 const Header = () => {
-  const [currentSection, setCurrentSection] = useState('home');
+  const [currentSection, setCurrentSection] = useState('Home');
 
   const handleCurrentSectionChange = (section) => {
     setCurrentSection(section);
@@ -29,10 +30,19 @@ const Header = () => {
     );
   });
 
+  const headerAnimation = {
+    hidden: { opacity: 0, y: -100 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { delay: 1.6, duration: 1 },
+    },
+  };
+
   return (
-    <header>
-      <nav>{navButtons}</nav>
-    </header>
+    <motion.header initial="hidden" whileInView="visible">
+      <motion.nav variants={headerAnimation}>{navButtons}</motion.nav>
+    </motion.header>
   );
 };
 

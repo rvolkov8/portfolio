@@ -33,23 +33,19 @@ nav li.active {
   box-shadow: 0 2px 0 var(--blue);
 }
 
-/* @media for mac air  */
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 992px) {
   header {
-    padding: 0 30px;
+    padding: 0 70px;
+    height: 60px;
   }
 }
 
-/* @media for 1920x1080  */
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
   header {
-    padding: 0 50px;
+    padding: 0 100px;
+    height: 80px;
   }
-}
-
-/* @media for 2560x1440  */
-@media screen and (max-width: 2560px) {
-  header {
-    padding: 0 50px;
+  nav li {
+    font-size: 1.2rem;
   }
 }
