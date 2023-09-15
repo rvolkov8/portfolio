@@ -50,7 +50,7 @@ section#about button {
 
 section#about button:hover {
   background-color: var(--blue);
-  color: var(--white);
+  color: var(--bg-gray);
 }
 
 @media screen and (min-width: 992px) {

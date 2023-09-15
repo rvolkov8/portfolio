@@ -19,6 +19,7 @@
   --white: #ffffff;
   --blue: #38b6ff;
   --bg-gray: #272828;
+  --red: #f05033;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -52,10 +53,11 @@ span {
 
 a {
   text-decoration: none;
-  color: var(--blue);
+  color: var(--white);
+  transition: all 0.2s ease-in-out;
 }
 a:hover {
-  text-decoration: underline;
+  color: var(--blue);
 }
 
 h1,
