@@ -50,6 +50,7 @@ const Home = () => {
         </motion.h2>
       </div>
       <motion.img
+        viewport={{ once: false }}
         variants={imgAnimation}
         src="src/assets/me-home-picture.jpg"
         alt="Picture"
