@@ -5,6 +5,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Linkle from './components/Linkle';
 import { useEffect } from 'react';
+import TechHub from './components/TechHub';
 
 function App() {
   // useEffect(() => {
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Skills />
       <Linkle />
+      <TechHub />
     </>
   );
 }
