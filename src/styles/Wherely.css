@@ -1,0 +1,144 @@
+section#wherely {
+  height: calc(100vh + 1px);
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+section#wherely p {
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+section#wherely a {
+  display: flex;
+  align-self: center;
+  gap: 5px;
+  font-weight: 300;
+}
+
+section#wherely a svg {
+  height: 20px;
+  width: 20px;
+  transition: all 0.2s ease-in-out;
+  fill: var(--white);
+  align-self: center;
+}
+
+section#wherely a:hover > svg {
+  fill: var(--blue);
+}
+
+section#wherely .project {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+section#wherely .project img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+section#wherely .project h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+}
+
+section#wherely .project p {
+  font-weight: 100;
+}
+
+section#wherely .project .buttons {
+  display: flex;
+  align-items: center;
+}
+
+section#wherely .project .buttons > * {
+  font-weight: 400;
+  font-family: 'Space Grotesk', sans-serif;
+  border: 0.5px solid var(--white);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+section#wherely .project .buttons > *:first-child:hover {
+  background-color: var(--blue);
+  border: 0.5px solid var(--blue);
+  color: var(--black);
+  fill: var(--black);
+}
+
+section#wherely .project .buttons > *:first-child:hover > svg {
+  fill: var(--black);
+}
+
+section#wherely .project .buttons > *:last-child:hover {
+  background-color: var(--red);
+  border: 0.5px solid var(--red);
+  color: var(--white);
+}
+
+section#wherely .project .buttons > *:last-child:hover > svg {
+  fill: var(--white);
+}
+
+section#wherely .gradient {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 2));
+  background: linear-gradient(var(--black), var(--blue));
+}
+
+@media screen and (min-width: 992px) {
+  section#wherely p,
+  section#wherely a {
+    font-size: 1.1rem;
+  }
+
+  section#wherely button {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+  }
+  section#wherely .project {
+    gap: 120px;
+    padding: 0 100px;
+  }
+  section#wherely .project > div {
+    display: flex;
+    flex-direction: column;
+  }
+  section#wherely .project > div {
+    gap: 35px;
+  }
+  section#wherely .project h2 {
+    font-size: 2rem;
+  }
+  section#wherely .project p {
+    font-size: 1.4rem;
+  }
+  section#wherely .project .buttons {
+    gap: 20px;
+  }
+  section#wherely .project .buttons > * {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+  }
+  section#wherely .project .buttons > * > svg {
+    height: 25px;
+    width: 25px;
+  }
+  section#wherely .gradient {
+    --size: 450px;
+    bottom: 20%;
+    left: 30%;
+  }
+}

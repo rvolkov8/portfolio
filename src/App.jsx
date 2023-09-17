@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Linkle from './components/Linkle';
 import { useEffect } from 'react';
 import TechHub from './components/TechHub';
+import Wherely from './components/Wherely';
 
 function App() {
   // useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
       <Skills />
       <Linkle />
       <TechHub />
+      <Wherely />
     </>
   );
 }
