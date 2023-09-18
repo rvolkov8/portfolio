@@ -4,9 +4,9 @@ import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Linkle from './components/Linkle';
-import { useEffect } from 'react';
 import TechHub from './components/TechHub';
 import Wherely from './components/Wherely';
+import Testimonials from './components/Testimonials';
 
 function App() {
   // useEffect(() => {
@@ -22,6 +22,7 @@ function App() {
       <Linkle />
       <TechHub />
       <Wherely />
+      <Testimonials />
     </>
   );
 }

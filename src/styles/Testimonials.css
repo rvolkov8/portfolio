@@ -1,0 +1,116 @@
+section.testimonials {
+  height: calc(100vh + 1px);
+  width: 100vw;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+
+section.testimonials#third {
+  scroll-snap-align: end;
+}
+
+section.testimonials > .heading-container {
+  position: absolute;
+  z-index: 1;
+  box-shadow: inset 0 -3px 0 var(--blue);
+}
+
+section.testimonials h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+section.testimonials .testimonial {
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+section.testimonials .testimonial#second {
+  align-self: flex-end;
+}
+
+section.testimonials .testimonial#second h2 {
+  text-align: right;
+}
+
+section.testimonials .ex-colleague {
+  display: flex;
+  align-items: center;
+}
+
+section.testimonials .ex-colleague img {
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+section.testimonials .ex-colleague > div {
+  display: flex;
+  flex-direction: column;
+}
+
+section.testimonials .ex-colleague p {
+  color: var(--white);
+  font-weight: 700;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+@media screen and (min-width: 992px) {
+  section.testimonials {
+    padding: 0 100px;
+  }
+
+  section.testimonials > .heading-container {
+    top: 15%;
+    right: 0;
+    padding-bottom: 10px;
+    padding-right: 70px;
+  }
+
+  section.testimonials h3 {
+    font-size: 1.6rem;
+  }
+
+  section.testimonials .testimonial {
+    gap: 60px;
+  }
+
+  section.testimonials .testimonial h2 {
+    font-size: 2.1rem;
+    font-weight: 100;
+  }
+
+  section.testimonials .ex-colleague {
+    gap: 20px;
+  }
+
+  section.testimonials .ex-colleague img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  section.testimonials .ex-colleague > div {
+    gap: 10px;
+  }
+
+  section.testimonials .ex-colleague p:first-child {
+    font-size: 1.3rem;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  section.testimonials .ex-colleague p:nth-child(2) {
+    font-weight: 200;
+    font-size: 0.9rem;
+  }
+}

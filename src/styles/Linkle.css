@@ -5,6 +5,7 @@ section#linkle {
   flex-direction: column;
   justify-content: center;
   z-index: 1;
+  overflow: hidden;
 }
 
 section#linkle > div:first-child {

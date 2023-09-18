@@ -92,8 +92,6 @@ section#tech-hub .project .buttons > *:last-child:hover > svg {
 
 section#tech-hub .gradient {
   position: absolute;
-  left: -20%;
-  bottom: 200px;
   width: var(--size);
   height: var(--size);
   filter: blur(calc(var(--size) / 2));
@@ -142,5 +140,7 @@ section#tech-hub .gradient {
 
   section#tech-hub .gradient {
     --size: 300px;
+    left: -20%;
+    bottom: 200px;
   }
 }
