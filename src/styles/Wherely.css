@@ -7,23 +7,13 @@ section#wherely {
   z-index: 1;
 }
 
-section#wherely p {
-  font-weight: 300;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
 section#wherely a {
   display: flex;
   align-self: center;
-  gap: 5px;
   font-weight: 300;
 }
 
 section#wherely a svg {
-  height: 20px;
-  width: 20px;
   transition: all 0.2s ease-in-out;
   fill: var(--white);
   align-self: center;
@@ -66,12 +56,10 @@ section#wherely .project .buttons > * {
   border: 0.5px solid var(--white);
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 section#wherely .project .buttons > *:first-child:hover {
   background-color: var(--blue);
-  border: 0.5px solid var(--blue);
   color: var(--black);
   fill: var(--black);
 }
@@ -82,7 +70,6 @@ section#wherely .project .buttons > *:first-child:hover > svg {
 
 section#wherely .project .buttons > *:last-child:hover {
   background-color: var(--red);
-  border: 0.5px solid var(--red);
   color: var(--white);
 }
 
@@ -98,16 +85,17 @@ section#wherely .gradient {
   background: linear-gradient(var(--black), var(--blue));
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1366px) {
   section#wherely p,
   section#wherely a {
     font-size: 1.1rem;
   }
 
-  section#wherely button {
-    font-size: 1.2rem;
-    padding: 10px 30px;
+  section#wherely a svg {
+    height: 20px;
+    width: 20px;
   }
+
   section#wherely .project {
     gap: 120px;
     padding: 0 100px;
@@ -131,13 +119,86 @@ section#wherely .gradient {
   section#wherely .project .buttons > * {
     font-size: 1.2rem;
     padding: 10px 30px;
+    gap: 10px;
   }
+
   section#wherely .project .buttons > * > svg {
     height: 25px;
     width: 25px;
   }
+
+  section#wherely .project .buttons > *:first-child:hover {
+    border: 0.5px solid var(--blue);
+  }
+
+  section#wherely .project .buttons > *:last-child:hover {
+    border: 0.5px solid var(--red);
+  }
+
   section#wherely .gradient {
     --size: 450px;
+    bottom: 20%;
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  section#wherely p,
+  section#wherely a {
+    font-size: 1.4rem;
+  }
+
+  section#wherely a svg {
+    height: 30px;
+    width: 30px;
+  }
+
+  section#wherely .project {
+    gap: 100px;
+    padding: 0 125px;
+  }
+
+  section#wherely .project img {
+    width: 120%;
+  }
+
+  section#wherely .project > div {
+    display: flex;
+    flex-direction: column;
+  }
+  section#wherely .project > div {
+    gap: 50px;
+  }
+  section#wherely .project h2 {
+    font-size: 2.6rem;
+  }
+  section#wherely .project p {
+    font-size: 2rem;
+  }
+  section#wherely .project .buttons {
+    gap: 30px;
+  }
+  section#wherely .project .buttons > * {
+    font-size: 1.6rem;
+    padding: 10px 40px;
+    gap: 15px;
+  }
+
+  section#wherely .project .buttons > * > svg {
+    height: 40px;
+    width: 40px;
+  }
+
+  section#wherely .project .buttons > *:first-child:hover {
+    border: 1px solid var(--blue);
+  }
+
+  section#wherely .project .buttons > *:last-child:hover {
+    border: 1px solid var(--red);
+  }
+
+  section#wherely .gradient {
+    --size: 600px;
     bottom: 20%;
     left: 30%;
   }

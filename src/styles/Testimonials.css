@@ -16,7 +16,6 @@ section.testimonials#third {
 section.testimonials > .heading-container {
   position: absolute;
   z-index: 1;
-  box-shadow: inset 0 -3px 0 var(--blue);
 }
 
 section.testimonials h3 {
@@ -65,7 +64,7 @@ section.testimonials .ex-colleague p {
   font-family: 'Space Grotesk', sans-serif;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1336px) {
   section.testimonials {
     padding: 0 100px;
   }
@@ -75,10 +74,11 @@ section.testimonials .ex-colleague p {
     right: 0;
     padding-bottom: 10px;
     padding-right: 70px;
+    box-shadow: inset 0 -3px 0 var(--blue);
   }
 
   section.testimonials h3 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   section.testimonials .testimonial {
@@ -112,5 +112,105 @@ section.testimonials .ex-colleague p {
   section.testimonials .ex-colleague p:nth-child(2) {
     font-weight: 200;
     font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1800px) {
+  section.testimonials {
+    padding: 0 150px;
+  }
+
+  section.testimonials > .heading-container {
+    top: 15%;
+    right: 0;
+    padding-bottom: 15px;
+    padding-right: 100px;
+    box-shadow: inset 0 -5px 0 var(--blue);
+  }
+
+  section.testimonials h3 {
+    font-size: 2.2rem;
+  }
+
+  section.testimonials .testimonial {
+    gap: 60px;
+  }
+
+  section.testimonials .testimonial h2 {
+    font-size: 2.3rem;
+    font-weight: 100;
+  }
+
+  section.testimonials .ex-colleague {
+    gap: 30px;
+  }
+
+  section.testimonials .ex-colleague img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+  }
+
+  section.testimonials .ex-colleague > div {
+    gap: 15px;
+  }
+
+  section.testimonials .ex-colleague p:first-child {
+    font-size: 1.6rem;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  section.testimonials .ex-colleague p:nth-child(2) {
+    font-weight: 200;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  section.testimonials {
+    padding: 0 150px;
+  }
+
+  section.testimonials > .heading-container {
+    top: 15%;
+    right: 0;
+    padding-bottom: 15px;
+    padding-right: 100px;
+    box-shadow: inset 0 -5px 0 var(--blue);
+  }
+
+  section.testimonials h3 {
+    font-size: 2.5rem;
+  }
+
+  section.testimonials .testimonial {
+    gap: 60px;
+  }
+
+  section.testimonials .testimonial h2 {
+    font-size: 2.7rem;
+    font-weight: 100;
+  }
+
+  section.testimonials .ex-colleague {
+    gap: 30px;
+  }
+
+  section.testimonials .ex-colleague img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+  }
+
+  section.testimonials .ex-colleague > div {
+    gap: 15px;
+  }
+
+  section.testimonials .ex-colleague p:first-child {
+    font-size: 1.8rem;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  section.testimonials .ex-colleague p:nth-child(2) {
+    font-weight: 200;
+    font-size: 1.3rem;
   }
 }

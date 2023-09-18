@@ -15,9 +15,9 @@ function App() {
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
   const testimonialsRef = useRef(null);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <>

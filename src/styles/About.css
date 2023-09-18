@@ -13,15 +13,14 @@ section#about .container {
   justify-content: space-between;
   background-color: var(--bg-gray);
   height: 100%;
+  width: 100%;
   z-index: 2;
+  /* box-shadow: 10px 10px 0px var(--white); */
 }
 
 section#about .shadow {
   position: absolute;
-  height: 70vh;
-  width: 70vw;
   border: 1px solid var(--blue);
-  transform: translate(30px, 10px);
   z-index: 1;
 }
 
@@ -54,7 +53,7 @@ section#about button:hover {
   color: var(--bg-gray);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1366px) {
   section#about {
     padding: 120px 200px;
   }
@@ -69,5 +68,60 @@ section#about button:hover {
   section#about button {
     font-size: 1.2rem;
     padding: 10px 30px;
+  }
+  section#about .shadow {
+    right: 200px;
+    left: 200px;
+    bottom: 120px;
+    top: 120px;
+
+    transform: translate(20px, 20px);
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  section#about {
+    padding: 140px 250px;
+  }
+  section#about p,
+  section#about strong {
+    font-size: 1.8rem;
+  }
+  section#about button {
+    font-size: 1.4rem;
+  }
+  section#about .shadow {
+    right: 250px;
+    left: 250px;
+    bottom: 140px;
+    top: 140px;
+
+    transform: translate(20px, 20px);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  section#about {
+    padding: 160px 300px;
+  }
+  section#about .container {
+    padding: 90px 120px;
+  }
+  section#about p,
+  section#about strong {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  section#about button {
+    font-size: 1.6rem;
+    padding: 15px 40px;
+  }
+  section#about .shadow {
+    right: 300px;
+    left: 300px;
+    bottom: 160px;
+    top: 160px;
+
+    transform: translate(20px, 20px);
   }
 }

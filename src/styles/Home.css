@@ -29,7 +29,7 @@ section#home img {
   bottom: 0;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1366px) {
   section#home {
     padding-left: 120px;
   }
@@ -69,4 +69,8 @@ section#home img {
   section#home img {
     right: -50px;
   }
+}
+
+@media screen and (min-width: 2560px) {
+  /* TO DO */
 }

@@ -12,7 +12,6 @@ section#connect {
 section#connect .heading-container {
   position: absolute;
   left: 0;
-  box-shadow: inset 0 -5px 0 var(--blue);
   z-index: 1;
 }
 
@@ -73,11 +72,12 @@ section#connect .gradient {
   background: linear-gradient(var(--black), var(--blue));
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1336px) {
   section#connect > .heading-container {
     padding-left: 150px;
     padding-bottom: 10px;
     top: 20%;
+    box-shadow: inset 0 -5px 0 var(--blue);
   }
 
   section#connect h3 {
@@ -107,6 +107,44 @@ section#connect .gradient {
 
   section#connect .gradient {
     --size: 600px;
+    bottom: -400px;
+    right: -10%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  section#connect > .heading-container {
+    padding-left: 200px;
+    padding-bottom: 15px;
+    top: 20%;
+  }
+
+  section#connect h3 {
+    font-size: 4.5rem;
+  }
+
+  section#connect .contacts {
+    gap: 70px;
+    margin-top: 150px;
+    min-width: 615px;
+  }
+
+  section#connect .contact {
+    gap: 25px;
+  }
+
+  section#connect .contact p,
+  section#connect .contact a {
+    font-size: 2.5rem;
+    font-weight: 200;
+  }
+
+  section#connect svg {
+    height: 60px;
+    width: 60px;
+  }
+
+  section#connect .gradient {
+    --size: 700px;
     bottom: -400px;
     right: -10%;
   }

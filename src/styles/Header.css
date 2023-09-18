@@ -29,19 +29,24 @@ nav li:hover {
   box-shadow: 0 2px 0 var(--blue);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1336px) {
   header {
     padding: 0 70px;
     height: 60px;
   }
 }
 
-@media screen and (min-width: 1441px) and (max-width: 1920px) {
+@media screen and (min-width: 1800px) {
+  nav li {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1920px) {
   header {
     padding: 0 100px;
     height: 80px;
   }
   nav li {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
