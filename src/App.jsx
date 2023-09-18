@@ -7,11 +7,13 @@ import Linkle from './components/Linkle';
 import TechHub from './components/TechHub';
 import Wherely from './components/Wherely';
 import Testimonials from './components/Testimonials';
+import Connect from './components/Connect';
+import { useEffect } from 'react';
 
 function App() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -23,6 +25,7 @@ function App() {
       <TechHub />
       <Wherely />
       <Testimonials />
+      <Connect />
     </>
   );
 }
