@@ -1,12 +1,10 @@
-import { useRef } from 'react';
 import '../styles/Linkle.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import PropTypes from 'prop-types';
 
-const Linkle = () => {
-  const sectionRef = useRef(null);
-
+const Linkle = ({ projectsRef }) => {
   const { scrollYProgress } = useScroll({
-    target: sectionRef,
+    target: projectsRef,
     offset: ['end end', 'end start'],
   });
 
@@ -115,7 +113,7 @@ const Linkle = () => {
 
   return (
     <motion.section
-      ref={sectionRef}
+      ref={projectsRef}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -197,6 +195,10 @@ const Linkle = () => {
       ></motion.div>
     </motion.section>
   );
+};
+
+Linkle.propTypes = {
+  projectsRef: PropTypes.object,
 };
 
 export default Linkle;

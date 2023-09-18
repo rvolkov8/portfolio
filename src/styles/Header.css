@@ -1,5 +1,5 @@
 header {
-  background-color: var(--black);
+  background-color: transparent;
   height: 70px;
   padding: 0 50px;
   position: fixed;
@@ -25,10 +25,6 @@ nav li {
 }
 
 nav li:hover {
-  color: var(--blue);
-}
-
-nav li.active {
   color: var(--blue);
   box-shadow: 0 2px 0 var(--blue);
 }

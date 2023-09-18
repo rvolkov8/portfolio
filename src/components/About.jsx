@@ -1,12 +1,10 @@
-import { useRef } from 'react';
 import '../styles/About.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import PropTypes from 'prop-types';
 
-const About = () => {
-  const sectionRef = useRef(null);
-
+const About = ({ aboutRef }) => {
   const { scrollYProgress } = useScroll({
-    target: sectionRef,
+    target: aboutRef,
     offset: ['end end', 'end start'],
   });
 
@@ -27,11 +25,11 @@ const About = () => {
 
   return (
     <motion.section
-      ref={sectionRef}
+      ref={aboutRef}
       style={{ opacity }}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       id="about"
     >
       <motion.div variants={fadeInAnimation} custom={1} className="container">
@@ -62,6 +60,10 @@ const About = () => {
       ></motion.div>
     </motion.section>
   );
+};
+
+About.propTypes = {
+  aboutRef: PropTypes.object,
 };
 
 export default About;

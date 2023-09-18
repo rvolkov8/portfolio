@@ -1,12 +1,10 @@
-import { useRef } from 'react';
 import '../styles/Skills.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import PropTypes from 'prop-types';
 
-const Skills = () => {
-  const sectionRef = useRef(null);
-
+const Skills = ({ skillsRef }) => {
   const { scrollYProgress } = useScroll({
-    target: sectionRef,
+    target: skillsRef,
     offset: ['end end', 'end start'],
   });
 
@@ -26,7 +24,7 @@ const Skills = () => {
   };
   return (
     <motion.section
-      ref={sectionRef}
+      ref={skillsRef}
       initial="hidden"
       style={{ opacity }}
       whileInView="visible"
@@ -160,6 +158,10 @@ const Skills = () => {
       </motion.div>
     </motion.section>
   );
+};
+
+Skills.propTypes = {
+  skillsRef: PropTypes.object,
 };
 
 export default Skills;

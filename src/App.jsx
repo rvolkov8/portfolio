@@ -8,23 +8,32 @@ import TechHub from './components/TechHub';
 import Wherely from './components/Wherely';
 import Testimonials from './components/Testimonials';
 import Connect from './components/Connect';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 function App() {
+  const aboutRef = useRef(null);
+  const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
+  const testimonialsRef = useRef(null);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
-      <Header />
+      <Header
+        aboutRef={aboutRef}
+        skillsRef={skillsRef}
+        projectsRef={projectsRef}
+        testimonialsRef={testimonialsRef}
+      />
       <Home />
-      <About />
-      <Skills />
-      <Linkle />
+      <About aboutRef={aboutRef} />
+      <Skills skillsRef={skillsRef} />
+      <Linkle projectsRef={projectsRef} />
       <TechHub />
       <Wherely />
-      <Testimonials />
+      <Testimonials testimonialsRef={testimonialsRef} />
       <Connect />
     </>
   );

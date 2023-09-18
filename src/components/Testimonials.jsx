@@ -1,8 +1,9 @@
 import { useRef } from 'react';
 import '../styles/Testimonials.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import PropTypes from 'prop-types';
 
-const Wherely = () => {
+const Testimonials = ({ testimonialsRef }) => {
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -89,6 +90,7 @@ const Wherely = () => {
   return (
     <>
       <motion.section
+        ref={testimonialsRef}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -98,14 +100,14 @@ const Wherely = () => {
         <motion.div
           className="heading-container"
           variants={animation}
-          custom={1}
+          custom={3}
         >
           <motion.h3 variants={h3Animation} custom={4}>
             Testimonials
           </motion.h3>
         </motion.div>
         <div className="testimonial" id="first">
-          <motion.h2 variants={quoteAnimation} custom={5}>
+          <motion.h2 variants={quoteAnimation} custom={6}>
             &ldquo;Rostyslav consistently demonstrated a remarkable intellect
             and thoughtful approach. His dedication and ambition were evident in
             his work ethic.&ldquo;
@@ -113,11 +115,11 @@ const Wherely = () => {
           <div className="ex-colleague">
             <motion.img
               variants={exColleagueImgAnimation}
-              custom={5}
+              custom={6}
               src="src/assets/testimonials/angel-iskrev.jpeg"
               alt="Photo of Angel Iskrev"
             />
-            <motion.div variants={exColleagueInfoAnimation} custom={6}>
+            <motion.div variants={exColleagueInfoAnimation} custom={7}>
               <p>Angel Iskrev</p>
               <p>
                 Creative Director &<br></br>Co-Founder at proof.
@@ -192,4 +194,8 @@ const Wherely = () => {
   );
 };
 
-export default Wherely;
+Testimonials.propTypes = {
+  testimonialsRef: PropTypes.object,
+};
+
+export default Testimonials;
