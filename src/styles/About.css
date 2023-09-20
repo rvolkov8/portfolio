@@ -15,7 +15,6 @@ section#about .container {
   height: 100%;
   width: 100%;
   z-index: 2;
-  /* box-shadow: 10px 10px 0px var(--white); */
 }
 
 section#about .shadow {
@@ -34,9 +33,9 @@ section#about strong {
   font-weight: 700;
 }
 
-section#about div p {
-  margin-bottom: 25px;
-}
+/* section#about div p:first-child {
+  padding-bottom: 25px;
+} */
 
 section#about button {
   font-family: 'Space Grotesk', sans-serif;
@@ -58,16 +57,19 @@ section#about button:hover {
     padding: 120px 200px;
   }
   section#about .container {
-    padding: 70px 90px;
+    padding: 40px 60px;
+    gap: 20px;
   }
   section#about p,
   section#about strong {
     font-size: 1.45rem;
     line-height: 1.5;
   }
+
   section#about button {
     font-size: 1.2rem;
     padding: 10px 30px;
+    margin-top: 20px;
   }
   section#about .shadow {
     right: 200px;
@@ -89,6 +91,8 @@ section#about button:hover {
   }
   section#about button {
     font-size: 1.4rem;
+    margin-top: 20px;
+    margin-top: 30px;
   }
   section#about .shadow {
     right: 250px;
@@ -105,7 +109,7 @@ section#about button:hover {
     padding: 160px 300px;
   }
   section#about .container {
-    padding: 90px 120px;
+    padding: 70px 90px;
   }
   section#about p,
   section#about strong {
@@ -115,6 +119,7 @@ section#about button:hover {
   section#about button {
     font-size: 1.6rem;
     padding: 15px 40px;
+    margin-top: 30px;
   }
   section#about .shadow {
     right: 300px;
