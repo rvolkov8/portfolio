@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import '../styles/Wherely.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import wherelyDemo from '../assets/project-demos/wherely-demo.gif';
 
 const Wherely = () => {
   const sectionRef = useRef(null);
@@ -80,7 +81,7 @@ const Wherely = () => {
         <motion.img
           variants={imgAnimation}
           custom={3}
-          src="src/assets/project-demos/wherely-demo.gif"
+          src={wherelyDemo}
           alt="Wherely demo"
         />
         <div>

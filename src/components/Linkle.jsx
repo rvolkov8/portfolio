@@ -1,6 +1,7 @@
 import '../styles/Linkle.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import PropTypes from 'prop-types';
+import linkleDemo from '../assets/project-demos/linkle-demo.gif';
 
 const Linkle = ({ projectsRef }) => {
   const { scrollYProgress } = useScroll({
@@ -145,7 +146,7 @@ const Linkle = ({ projectsRef }) => {
         <motion.img
           variants={imgAnimation}
           custom={9}
-          src="src/assets/project-demos/linkle-demo.gif"
+          src={linkleDemo}
           alt="Linkle demo"
         />
         <div>

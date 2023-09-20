@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import '../styles/TechHub.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import techHubDemo from '../assets/project-demos/techhub-demo.gif';
 
 const TechHub = () => {
   const sectionRef = useRef(null);
@@ -119,7 +120,7 @@ const TechHub = () => {
         <motion.img
           variants={imgAnimation}
           custom={3}
-          src="src/assets/project-demos/techhub-demo.gif"
+          src={techHubDemo}
           alt="TechHub demo"
         />
       </div>

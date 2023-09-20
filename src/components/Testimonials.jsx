@@ -2,6 +2,9 @@ import { useRef } from 'react';
 import '../styles/Testimonials.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import PropTypes from 'prop-types';
+import angelIskrev from '../assets/testimonials/angel-iskrev.jpeg';
+import elenaStaneva from '../assets/testimonials/elena-staneva.jpeg';
+import petarMarinov from '../assets/testimonials/petar-marinov.jpg';
 
 const Testimonials = ({ testimonialsRef }) => {
   const sectionRef = useRef(null);
@@ -116,7 +119,7 @@ const Testimonials = ({ testimonialsRef }) => {
             <motion.img
               variants={exColleagueImgAnimation}
               custom={6}
-              src="src/assets/testimonials/angel-iskrev.jpeg"
+              src={angelIskrev}
               alt="Photo of Angel Iskrev"
             />
             <motion.div variants={exColleagueInfoAnimation} custom={7}>
@@ -148,7 +151,7 @@ const Testimonials = ({ testimonialsRef }) => {
             <motion.img
               variants={exColleagueImgAnimation}
               custom={2}
-              src="src/assets/testimonials/elena-staneva.jpeg"
+              src={elenaStaneva}
               alt="Photo of Elena Staneva"
             />
             <motion.div variants={exColleagueInfoAnimation} custom={3}>
@@ -178,7 +181,7 @@ const Testimonials = ({ testimonialsRef }) => {
             <motion.img
               variants={exColleagueImgAnimation}
               custom={3}
-              src="src/assets/testimonials/petar-marinov.jpg"
+              src={petarMarinov}
               alt="Photo of Petar Marinov"
             />
             <motion.div variants={exColleagueInfoAnimation} custom={4}>

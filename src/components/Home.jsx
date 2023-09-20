@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import '../styles/Home.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import mePicture from '../assets/me-home-picture.jpg';
 
 const Home = () => {
   const sectionRef = useRef(null);
@@ -52,7 +53,7 @@ const Home = () => {
       <motion.img
         viewport={{ once: false }}
         variants={imgAnimation}
-        src="src/assets/me-home-picture.jpg"
+        src={mePicture}
         alt="Picture"
       />
     </motion.section>
