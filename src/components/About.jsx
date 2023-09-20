@@ -1,6 +1,7 @@
 import '../styles/About.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import PropTypes from 'prop-types';
+import CV from '../assets/JavaScript_Dev_Rostyslav_Volkov_ENG.pdf';
 
 const About = ({ aboutRef }) => {
   const { scrollYProgress } = useScroll({
@@ -44,13 +45,18 @@ const About = ({ aboutRef }) => {
           evolving journey in web development!
         </motion.p>
         <div>
-          <motion.p variants={fadeInAnimation} custom={4}>
+          <motion.p variants={fadeInAnimation} custom={4} className="cta">
             You can read more about my biography, experience, skills, education
             and much more in the PDF attached bellow:
           </motion.p>
-          <motion.button variants={fadeInAnimation} custom={5}>
+          <motion.a
+            variants={fadeInAnimation}
+            custom={5}
+            href={CV}
+            download={true}
+          >
             Download CV
-          </motion.button>
+          </motion.a>
         </div>
       </motion.div>
       <motion.div
