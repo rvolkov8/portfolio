@@ -48,6 +48,52 @@ section#about a:hover {
   color: var(--bg-gray);
 }
 
+@media screen and (max-width: 375px) {
+  section#about .container {
+    padding: 40px 30px 50px 30px;
+    height: 100vh;
+  }
+  section#about p,
+  section#about strong {
+    font-size: 1rem;
+  }
+  section#about .cta {
+    margin-bottom: 40px;
+  }
+
+  section#about a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  section#about .shadow {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 450px) {
+  section#about .container {
+    padding: 40px 30px 50px 30px;
+    height: 100vh;
+  }
+  section#about p,
+  section#about strong {
+    font-size: 1.3rem;
+  }
+  section#about .cta {
+    margin-bottom: 40px;
+  }
+
+  section#about a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  section#about .shadow {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1366px) {
   section#about {
     padding: 120px 200px;

@@ -28,8 +28,15 @@ nav li:hover {
   color: var(--blue);
   box-shadow: 0 2px 0 var(--blue);
 }
-
+@media screen and (max-width: 450px) {
+  header {
+    display: none;
+  }
+}
 @media screen and (min-width: 1336px) {
+  header {
+    display: block;
+  }
   header {
     padding: 0 70px;
     height: 60px;

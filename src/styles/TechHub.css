@@ -5,6 +5,7 @@ section#tech-hub {
   flex-direction: column;
   justify-content: center;
   z-index: 1;
+  overflow: hidden;
 }
 
 section#tech-hub a {
@@ -83,6 +84,42 @@ section#tech-hub .gradient {
   height: var(--size);
   filter: blur(calc(var(--size) / 2));
   background: linear-gradient(var(--black), var(--blue));
+}
+
+@media screen and (max-width: 450px) {
+  section#tech-hub {
+    padding: 20px;
+  }
+  section#tech-hub .project {
+    flex-direction: column;
+    gap: 40px;
+  }
+  section#tech-hub .project h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  section#tech-hub .project p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  section#tech-hub .project .buttons {
+    gap: 15px;
+  }
+  section#tech-hub .project .buttons a {
+    flex: 1;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  section#tech-hub .project .buttons a svg {
+    height: 20px;
+    width: 20px;
+  }
+  section#tech-hub .gradient {
+    --size: 350px;
+    left: -70%;
+    bottom: 30%;
+  }
 }
 
 @media screen and (min-width: 1366px) {

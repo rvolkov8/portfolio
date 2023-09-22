@@ -5,6 +5,7 @@ section#wherely {
   flex-direction: column;
   justify-content: center;
   z-index: 1;
+  overflow: hidden;
 }
 
 section#wherely a {
@@ -83,6 +84,41 @@ section#wherely .gradient {
   height: var(--size);
   filter: blur(calc(var(--size) / 2));
   background: linear-gradient(var(--black), var(--blue));
+}
+
+@media screen and (max-width: 450px) {
+  section#wherely {
+    padding: 20px;
+  }
+  section#wherely .project {
+    flex-direction: column;
+    gap: 40px;
+  }
+  section#wherely .project h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  section#wherely .project p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  section#wherely .project .buttons {
+    gap: 15px;
+  }
+  section#wherely .project .buttons a {
+    flex: 1;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  section#wherely .project .buttons a svg {
+    height: 20px;
+    width: 20px;
+  }
+  section#wherely .gradient {
+    --size: 300px;
+    top: 10%;
+  }
 }
 
 @media screen and (min-width: 1366px) {

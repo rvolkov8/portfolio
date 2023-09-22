@@ -72,6 +72,49 @@ section#connect .gradient {
   background: linear-gradient(var(--black), var(--blue));
 }
 
+@media screen and (max-width: 450px) {
+  section#connect {
+    padding: 0 40px;
+  }
+
+  section#connect > .heading-container {
+    padding-left: 50px;
+    padding-bottom: 10px;
+    top: 15%;
+    box-shadow: inset 0 -3px 0 var(--blue);
+  }
+
+  section#connect h3 {
+    font-size: 1.7rem;
+  }
+
+  section#connect .contacts {
+    gap: 30px;
+    margin-top: 50px;
+    min-width: 300px;
+  }
+
+  section#connect .contact {
+    gap: 15px;
+  }
+
+  section#connect .contact p,
+  section#connect .contact a {
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+
+  section#connect svg {
+    height: 30px;
+    width: 30px;
+  }
+
+  section#connect .gradient {
+    --size: 500px;
+    bottom: -300px;
+  }
+}
+
 @media screen and (min-width: 1336px) {
   section#connect > .heading-container {
     padding-left: 150px;
