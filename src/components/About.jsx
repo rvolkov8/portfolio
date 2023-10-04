@@ -1,7 +1,7 @@
 import '../styles/About.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import PropTypes from 'prop-types';
-import CV from '../assets/JavaScript_Dev_Rostyslav_Volkov_ENG.pdf';
+import CV from '../assets/JavaScript_Dev_Rostyslav_Volkov.pdf';
 
 const About = ({ aboutRef }) => {
   const { scrollYProgress } = useScroll({
