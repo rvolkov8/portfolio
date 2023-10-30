@@ -44,7 +44,7 @@ const Home = () => {
           Hi, I&apos;m Rostyslav 👋,
         </motion.h1>
         <motion.h1 custom={3} variants={textAnimation}>
-          a JavaScript Developer
+          a Web Developer
         </motion.h1>
         <motion.h2 custom={4} variants={textAnimation}>
           Currently based in Sofia, Bulgaria.
